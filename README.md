@@ -16,7 +16,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/nzabajp/ip-address-tracker)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://nzabajp.github.io/ip-address-tracker/)
 
 ## My process
 
