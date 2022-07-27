@@ -7,7 +7,6 @@ const searchInput = document.getElementById("search-input")
 
 //gets current location and passes it to renderMap
 myLocation()
-checkInput()
 
 searchInput.addEventListener("click", () => searchInput.select())
 

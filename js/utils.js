@@ -26,15 +26,8 @@ function renderMap(lat, long) {
 }
 
 function setMarker(lat, lng) {
-    //add custom marker icon
-    const myIcon = L.icon({
-        iconUrl: '../images/icon-location.svg',
-        iconSize: [23, 28],
-        iconAnchor: [11, 5]
-    });
-    
     //adds marker to map
-    const marker = L.marker([lat, lng], {icon: myIcon}).addTo(map);
+    const marker = L.marker([lat, lng]).addTo(map);
 
     //adds popup message to marker
     marker.bindPopup(`<b>Lat: ${lat}<br>Lng: ${lng}</b>`).openPopup();
