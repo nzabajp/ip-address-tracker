@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <!--  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+ integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+ crossorigin=""></script>
+ <!--  -->
+    <link rel="stylesheet" href="./css/index.css" >
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>IP Address Tracker</h1>
+        <div class="search-bar">
+          <input id="search-input" type="text" placeholder="Search for any IP address or domain">
+          <button id="search-btn">></button>
+        </div>
+        <div id="info-container">
+          <div>
+            <p>IP Address</p>
+            <h3>---.---.---.---</h3>
+          </div>
+          <hr>
+          <div>
+            <p>Location</p>
+            <h3>--------, --- ---</h3>
+          </div>
+          <hr>
+          <div>
+            <p>Timezone</p>
+            <h3>---------</h3>
+          </div>
+          <hr>
+          <div>
+            <p>ISP</p>
+            <h3>------ ------</h3>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="map-container" id="map"></div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/nzabajp" target="_blank">Jean Claude Nzabanterura</a>.
+      </div>
+    </footer>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
