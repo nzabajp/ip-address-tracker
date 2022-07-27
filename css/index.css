@@ -124,7 +124,7 @@ button:active {
 .map-container {
     min-height: calc(100vh - 250px);
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 footer {
