@@ -44,8 +44,7 @@ async function getAddressInfo(endpoint) {
 }
 
 function renderInfo(dataObj) {
-    const {region, city, postalCode, timezone, lat, lng} = dataObj.location
-    const {ip, isp} = dataObj
+    const {ip, isp, location: {region, city, postalCode, timezone, lat, lng}} = dataObj
 
     //reconfigures the map div with new coords
     map.flyTo(new L.LatLng(lat, lng));
